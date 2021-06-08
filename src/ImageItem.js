@@ -29,7 +29,7 @@ export default class ImageItem extends React.Component {
     })
   }
 
-  componentWillMount() {
+  componentDidMount() {
     // 動画へのURLはS3へリダイレクトがかかるため先に処理しておく
     if (this.props.image.video) {
       this.getCanonicalUrl(this.props.image.video.uri).then((url)=> this.setState({ video_url: url }))
