@@ -804,6 +804,7 @@ export default class ImageView extends Component<PropsType, StateType> {
                 onRequestClose={this.close}
                 supportedOrientations={['portrait', 'landscape']}
                 deviceHeight={Math.max(Dimensions.get('window').height, Dimensions.get('screen').height)}
+                hardwareAccelerated={true}
             >
                 <Animated.View
                     style={[
