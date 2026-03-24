@@ -240,7 +240,7 @@ export default class ImageView extends Component<PropsType, StateType> {
         );
         const {scale, translate} = this.imageInitialParams[imageIndex] || {
             scale: 1,
-            translate: {},
+            translate: {x: 0, y: 0},
         };
 
         this.setState({
